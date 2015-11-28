@@ -1,0 +1,19 @@
+{
+  "name": "photorgasms",
+  "description": "Art Journal",
+  "main": "index.html",
+  "moduleType": [],
+  "authors": [
+    "Anna Prigkipaki"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

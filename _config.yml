@@ -1,0 +1,74 @@
+# Site settings
+title: "MADness"
+description: MAD for Jekyll
+logo: favicon.png
+discus_shortname: MADness
+header-img: img/home-bg.jpg
+email: mad@ness.com
+url: http://madforjekyll.github.io
+search: true
+share: true
+comments: true
+
+# Read Time is a calculator tp provide post read-time based on word count. Usage is recommended.
+readtime: true
+
+# Specify the average Words per minute. If not defined, 180 will be used
+wpm: 200
+
+# Owner/author information
+owner:
+  name:   MADness
+  avatar: avatar.jpg
+  # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
+  description:    MAD for Jekyll
+
+# Social networking links used in footer. Update and remove as you like.
+twitter_username: MAD4Jekyll
+facebook_username: MAD4Jekyll
+github_username: MAD4Jekyll
+deviantart_username: MAD4Jekyll
+500px_username: MAD4Jekyll
+flickr_username: MAD4Jekyll
+instagram_username: MAD4Jekyll
+
+ 
+# Internal nav
+nav:
+ writing: "source_url/writing/"
+ gallery: "source_url/gallery/"
+ about: "source_url/about/"
+
+
+# Server
+destination:      	 ./_site
+port:             	 4000
+
+# Build settings
+highlighter:         pygments
+markdown:           redcarpet
+redcarpet:
+    extensions:     
+     - Hard_wrap
+     - no_intra_emphasis
+     - strikethrough
+     - fenced_code_blocks
+     - autolink
+     - tables
+     - with_toc_data
+     - highlight
+     - footnotes
+    input:          GFM
+sass:
+    style:          :compressed
+paginate: 5
+paginate_path: "/writing/page:num/"
+permalink: "/writing/:title/"
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+slugify: "pretty"
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-xxxxxxxx-x
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
