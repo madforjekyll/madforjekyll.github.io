@@ -44,6 +44,10 @@ nav:
 destination:      	 ./_site
 port:             	 4000
 
+#dependencies
+# Gems
+gems: [jekyll-paginate]
+
 # Build settings
 highlighter:         pygments
 markdown:           redcarpet
