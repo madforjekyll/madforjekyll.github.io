@@ -44,20 +44,24 @@ nav:
 destination:      	 ./_site
 port:             	 4000
 
+#dependencies
+# Gems
+gems: [jekyll-paginate]
+
 # Build settings
-highlighter:         pygments
-markdown:           redcarpet
-redcarpet:
+highlighter:         rouge
+markdown:           kramdown
+kramdown:
     extensions:     
      - Hard_wrap
-     - no_intra_emphasis
-     - strikethrough
-     - fenced_code_blocks
-     - autolink
-     - tables
-     - with_toc_data
-     - highlight
-     - footnotes
+#     - no_intra_emphasis
+#     - strikethrough
+#     - fenced_code_blocks
+#     - autolink
+#     - tables
+#     - with_toc_data
+#     - highlight
+#     - footnotes
     input:          GFM
 sass:
     style:          :compressed
