@@ -2,13 +2,12 @@
 layout: page
 title: Search
 description: "What are you looking for?"
-header-img: "img/home-bg.jpg"
-permalink: /search/
-header-img: "img/search-bg.jpg"
+header-img: '/img/search-bg.jpg'
 ---
+{% include base.html %}
 
 <style type="text/css">
-            
+
       #search-input {
         display: inline-block;
         color: #008989;
@@ -18,7 +17,7 @@ header-img: "img/search-bg.jpg"
         width: 100%;
         font-size: 0.8em;
       }
-        
+
          #search-input:focus {
         display: inline-block;
         color: #008989;
@@ -36,17 +35,17 @@ header-img: "img/search-bg.jpg"
 
 <!-- Html Elements for Search -->
 <input type="text" id="search-input" placeholder="Enter keywords...">
-<ul id="results-container" style="list-style-type: none;"></ul>    
+<ul id="results-container" style="list-style-type: none;"></ul>
 
 <!-- Script pointing to jekyll-search.js -->
-<script src="{{ site.baseurl }}/js/jekyll-search.js" type="text/javascript"></script>
+<script src="{{base}}/{{ site.assets.js }}/jekyll-search.js" type="text/javascript"></script>
 
 
     <script type="text/javascript">
       SimpleJekyllSearch({
         searchInput: document.getElementById('search-input'),
         resultsContainer: document.getElementById('results-container'),
-        json: '{{ site.baseurl }}/search.json',
+        json: './search.json',
         searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
         noResultsText: 'No results found',
         limit: 10,
@@ -61,7 +60,7 @@ header-img: "img/search-bg.jpg"
    {% assign tags = site.tags | sort %}
 {% for tag in tags %}
  <span class="site-tag">
-    <a href="/writing/tag/{{ tag | first | slugify }}/"
+    <a href="{{base}}/{{site.pagesdir}}/writing/tag/{{ tag | first | slugify }}/"
         style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
             {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
     </a>
@@ -83,7 +82,7 @@ header-img: "img/search-bg.jpg"
    {% assign categories = site.categories | sort %}
 {% for category in categories %}
  <span class="site-category">
-    <a href="/writing/category/{{ category | first | slugify }}/">
+    <a href="{{base}}/{{site.pagesdir}}/writing/category/{{ category | first | slugify }}/">
             {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
     </a>
 </span>{% unless forloop.last %}&nbsp;{% endunless %}{% endfor %}
@@ -100,4 +99,3 @@ header-img: "img/search-bg.jpg"
 
 <br>
 <h6>Image Source: <a href="https://source.unsplash.com/NuE8Nu3otjo">UNSPLASH</a></h6>
-

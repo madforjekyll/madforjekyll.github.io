@@ -1,18 +1,18 @@
-# MAD4Jekyll - Theme for Jekyll 
+# MAD4Jekyll - Theme for Jekyll
 
 > !!! Configured for **USER** pages !!!
 
 ## Welcome to MAD4Jekyll!
-     
+
 
 ### 'MAD4Jekyll' is a theme for [Jekyll](https://github.com/jekyll/)
 
 
- 
+
 ### It is based on [Clean Blog](http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/) theme by [Start Bootstrap](http://startbootstrap.com/).
 
-     
-#  Homepage  
+
+#  Homepage
 
 #### Header Image
 
@@ -21,16 +21,17 @@
 #### A slider (it is turned off by default, since there is a also a separate section for a gallery)
 
 #### Contact Info
-            
 
-#  Navbar 
+
+#  Navbar
 
 #### A logo on the left side
- 
+
 #### 3 Pages for <a href="{{ root_url }}/writing/">'blogging'</a>, <a href="{{ root_url }}/gallery/">'gallery sliders'</a>, <a href="{{ root_url }}/about/">'about'</a>.
-       
+
 
 #####  Search page, with all the tags and categories at the bottom
+Search is powered by: https://github.com/christian-fei/Simple-Jekyll-Search
 
 ##### Footnotes poping up.
 

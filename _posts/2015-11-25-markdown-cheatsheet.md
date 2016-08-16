@@ -5,7 +5,7 @@ subtitle: This is Markdown Cheatsheet for MAD4Jekyll
 date:       2015-11-25 12:00:00
 author:     "MADness"
 header-img: "img/blog/header/post-bg-02.jpg"
-thumbnail: /img/blog/thumbs/thumb02.png
+thumbnail: img/blog/thumbs/thumb02.png
 tags: [tag-name-one, tag-name-two]
 categories: [cat01, cat02]
 ---
@@ -126,9 +126,9 @@ ___
 
 You also have the html option of adding an image in a post at a small size and the ability to click on it and zoom in a lightbox.
 
-`<p style="float: left; font-size: 9pt; margin-right:1em;"> 
-   <a href="{{ site.baseurl }}/img/blog/lb-lrg/img1.jpg" data-lightbox="gallery1" data-title="The first image" style="float: left; margin-right: -10%; margin-bottom: 1em;">
-     <img src="{{ site.baseurl }}/img/blog/lb-sm/lbs01.png">Image#01</a></p>`
+`<p style="float: left; font-size: 9pt; margin-right:1em;">
+   <a href="{{base}}/{{site.asset.my}}/img/blog/lb-lrg/img1.jpg" data-lightbox="gallery1" data-title="The first image" style="float: left; margin-right: -10%; margin-bottom: 1em;">
+     <img src="{{base}}/{{site.asset.my}}/img/blog/lb-sm/lbs01.png">Image#01</a></p>`
 
 ## For a more detailed syntax with Markdown, please visit [DaringFireball.net](http://daringfireball.net/projects/markdown/syntax)
 

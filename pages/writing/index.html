@@ -4,23 +4,16 @@ description: "So Mad!!!"
 title: "Writing"
 header-img: "img/writing-bg.jpg"
 ---
-
+<!-- BEGIN posts -->
 {% for post in paginator.posts %}
 
-
- {% assign post = site.posts.first %}
-  {% assign content = post.content %}
-  
-
-
 <div class="post-preview">
-    
-<a href="{{ root_url }}{{ post.url | prepend: site.baseurl }}">
+
+<a href="{{ post.url }}">
         {% if post.thumbnail %}
-	<img src="{{ post.thumbnail }}" style="float: left; margin: 8px 10px 0px 10px;">
+	<img src="{{base}}/{{site.assets.my}}/{{ post.thumbnail }}" style="float: left; margin: 8px 10px 0px 10px;">
 	{% endif %}
- 
- 
+
         <h2 class="post-title">  {{ root_url }}   {{ post.title }}
         </h2>
         {% if post.subtitle %}
@@ -32,6 +25,8 @@ header-img: "img/writing-bg.jpg"
     <p class="post-meta">Posted by {% if post.author %}{{ root_url }}{{ post.author }}{% else %}{{ root_url }}{{ site.title }}{% endif %} on {{ root_url }}{{ post.date | date: "%B %-d, %Y" }}</p>
 </div>
  {% endfor %}
+ <!-- END posts -->
+
 <p>&nbsp;</p>
 
 <!-- Pager -->
@@ -55,4 +50,3 @@ header-img: "img/writing-bg.jpg"
 
 <br>
 <h6>Image Source: <a href="https://unsplash.com/photos/8muUTAmcWU4">UNSPLASH</a>
-
