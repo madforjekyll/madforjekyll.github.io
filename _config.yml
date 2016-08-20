@@ -1,11 +1,19 @@
 # Site settings
 title: "MADness"
 description: MAD for Jekyll
+#file locations
+baseurl:
+pagesdir: pages
+assets:
+  MADforJekyll: assets/libs/MADforJekyll
+  libs: assets/libs
+  js: assets/libs/js
+  my: assets/my
 logo: favicon.png
 discus_shortname: MADness
 header-img: img/home-bg.jpg
 email: mad@ness.com
-url: http://madforjekyll.github.io
+#url: http://madforjekyll.github.io
 search: true
 share: true
 comments: true
@@ -19,7 +27,7 @@ wpm: 200
 # Owner/author information
 owner:
   name:   MADness
-  avatar: avatar.jpg
+  avatar: img/avatar.jpg
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
   description:    MAD for Jekyll
 
@@ -32,43 +40,48 @@ deviantart_username: MAD4Jekyll
 flickr_username: MAD4Jekyll
 instagram_username: MAD4Jekyll
 
- 
-# Internal nav
+# nav menu order
 nav:
- writing: "source_url/writing/"
- gallery: "source_url/gallery/"
- about: "source_url/about/"
+  - Writing
+  - Gallery
+  - About
 
 
 # Server
 destination:      	 ./_site
 port:             	 4000
 
+#dependencies
+# Gems
+gems:
+  - jekyll-paginate
+
 # Build settings
-highlighter:         pygments
-markdown:           redcarpet
-redcarpet:
-    extensions:     
+highlighter:         rouge
+markdown:           kramdown
+kramdown:
+    extensions:
      - Hard_wrap
-     - no_intra_emphasis
-     - strikethrough
-     - fenced_code_blocks
-     - autolink
-     - tables
-     - with_toc_data
-     - highlight
-     - footnotes
+#     - no_intra_emphasis
+#     - strikethrough
+#     - fenced_code_blocks
+#     - autolink
+#     - tables
+#     - with_toc_data
+#     - highlight
+#     - footnotes
     input:          GFM
 sass:
     style:          :compressed
 paginate: 5
-paginate_path: "/writing/page:num/"
-permalink: "/writing/:title/"
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+paginate_path: "pages/writing/page:num/"
+#permalink: "pages/writing/:title/"
+exclude: ["assets/libs/MADforJekyll/less","node_modules","Gruntfile.js","package.json","README.md"]
 slugify: "pretty"
+
 
 # Analytics and webmaster tools stuff goes here
 google_analytics:   UA-xxxxxxxx-x
-google_verify:      
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:         
+bing_verify:
