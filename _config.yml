@@ -1,14 +1,16 @@
 # Site settings
 title: "MADness"
 description: MAD for Jekyll
-logo: favicon.png
-discus_shortname: MADness
+#file locations
+baseurl:
 pagesdir: pages
 assets:
   MADforJekyll: assets/libs/MADforJekyll
   libs: assets/libs
   js: assets/libs/js
   my: assets/my
+logo: favicon.png
+discus_shortname: MADness
 header-img: img/home-bg.jpg
 email: mad@ness.com
 #url: http://madforjekyll.github.io

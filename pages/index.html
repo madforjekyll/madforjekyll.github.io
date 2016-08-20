@@ -10,17 +10,17 @@ permalink: ./index.html
 	<meta content="charset=utf-8">
 
 <!-- CSS -->
-	<link rel="stylesheet" href="{{bas}}/{{ site.assets.MADforJekyll }}/css/intro.css" type="text/css" media="screen" />
-	<link rel="stylesheet" href="{{base}}/{{ site.assets.MADforJekyll }}/css/flexslider.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/{{ site.assets.MADforJekyll }}/css/intro.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{ site.baseurl }}/{{ site.assets.MADforJekyll }}/css/flexslider.css" type="text/css" media="screen" />
 
 	<!-- Modernizr -->
-  <script src="{{base}}/{{ site.assets.js }}/modernizr.js"></script>
+  <script src="{{ site.baseurl }}/{{ site.assets.js }}/modernizr.js"></script>
 
 <!-- jQuery -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
   <!-- FlexSlider -->
-  <script defer src="{{base}}/{{ site.assets.libs }}/jquery/js/jquery.flexslider.js"></script>
+  <script defer src="{{ site.baseurl }}/{{ site.assets.libs }}/jquery/js/jquery.flexslider.js"></script>
 
   <!-- Back To Top -->
   <script type="text/javascript">
@@ -43,6 +43,10 @@ permalink: ./index.html
 </head>
 
 <body>
+	url {{url | inspect}}<br>
+	page.url {{page.url | inspect}}<br>
+	site.url {{site.url | inspect}}<br>
+
 
  <!-- intro -->
 <div class="intro">
@@ -59,8 +63,8 @@ permalink: ./index.html
 <b>Features</b>:
 <br><br>-- Integrated slider with captions from <a href="http://flexslider.woothemes.com/basic-slider-with-caption.html">Flexslider</a>.
 <br><br>-- Back To Top arrow.
-<br><br>-- A separate section for <a href="{{base}}/{{ site.pagesdir }}/writing/">'blogging'</a>.
-<br><br>-- A separate section for <a href="{{base}}/{{ site.pagesdir }}/gallery/">'galleries'</a>, beside the featured one at the homepage.</h4>
+<br><br>-- A separate section for <a href="{{site.baseurl}}/{{ site.pagesdir }}/writing/">'blogging'</a>.
+<br><br>-- A separate section for <a href="{{site.baseurl}}/{{ site.pagesdir }}/gallery/">'galleries'</a>, beside the featured one at the homepage.</h4>
         </div>
 
 
@@ -77,15 +81,15 @@ permalink: ./index.html
 	<div class="flexslider" style="display:none;">
   <ul class="slides">
     <li>
-      <img src="{{base}}/{{ site.assets.my }}/img/slider/bg1.jpg" />
+      <img src="{{ site.baseurl }}/{{ site.assets.my }}/img/slider/bg1.jpg" />
 <p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
     </li>
     <li>
-      <img src="{{base}}/{{ site.assets.my }}/img/slider/bg2.jpg" />
+      <img src="{{ site.baseurl }}/{{ site.assets.my }}/img/slider/bg2.jpg" />
 <p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
     </li>
     <li>
-      <img src="{{base}}/{{ site.assets.my }}/img/slider/bg3.jpg" />
+      <img src="{{ site.baseurl }}/{{ site.assets.my }}/img/slider/bg3.jpg" />
 <p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
     </li>
       </ul>

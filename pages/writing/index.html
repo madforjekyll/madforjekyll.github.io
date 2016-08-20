@@ -9,9 +9,9 @@ header-img: "img/writing-bg.jpg"
 
 <div class="post-preview">
 
-<a href="{{ post.url }}">
+<a href="{{ post.url | prepend: site.baseurl | to_absurl }}">
         {% if post.thumbnail %}
-	<img src="{{base}}/{{site.assets.my}}/{{ post.thumbnail }}" style="float: left; margin: 8px 10px 0px 10px;">
+	<img src="{{ site.baseurl }}/{{site.assets.my}}/{{ post.thumbnail }}" style="float: left; margin: 8px 10px 0px 10px;">
 	{% endif %}
 
         <h2 class="post-title">  {{ root_url }}   {{ post.title }}
