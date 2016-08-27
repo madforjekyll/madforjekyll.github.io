@@ -1,0 +1,59 @@
+---
+layout: page
+description: "So Mad!!!"
+title: "Writing"
+header-img: "assets/owner/hero/writing-bg.jpg"
+permalink: /writing/
+---
+
+{% for post in paginator.posts %}
+
+
+ {% assign post = site.posts.first %}
+  {% assign content = post.content %}
+  
+
+
+<div class="post-preview">
+    
+<a href="{{ post.url | prepend: site.baseurl }}">
+        {% if post.thumbnail %}
+	<img src="{{ post.thumbnail }}" style="float: left; margin: 8px 10px 0px 10px;">
+	{% endif %}
+ 
+ 
+        <h2 class="post-title">  {{ root_url }}   {{ post.title }}
+        </h2>
+        {% if post.subtitle %}
+        <h3 class="post-subtitle">  {{ root_url }}
+            {{ post.subtitle }}
+        </h3>
+        {% endif %}
+    </a>
+    <p class="post-meta">Posted by {% if post.author %}{{ root_url }}{{ post.author }}{% else %}{{ root_url }}{{ site.title }}{% endif %} on {{ root_url }}{{ post.date | date: "%B %-d, %Y" }}</p>
+</div>
+ {% endfor %}
+<p>&nbsp;</p>
+
+<!-- Pager -->
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+    {% if paginator.previous_page %}
+    <li class="previous">
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+    </li>
+    {% endif %}
+<span class="button-height" style="
+    font-size:.45em;"> Page {{ root_url }}{{paginator.page}} of {{ root_url }}{{paginator.total_pages}}</span>
+
+    {% if paginator.next_page %}
+    <li class="next">
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+    </li>
+    {% endif %}
+</ul>
+{% endif %}
+
+<br>
+<h6>Image Source: <a href="https://unsplash.com/photos/8muUTAmcWU4">UNSPLASH</a>
+

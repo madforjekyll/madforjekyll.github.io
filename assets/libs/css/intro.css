@@ -1,0 +1,72 @@
+.intro {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+.one-third.column               { width: 30.6666666667%; }
+.two-thirds.column              { width: 65.3333333333%; }
+.col-md-right-cntxt {
+    text-align:right;
+}
+.col-md-left-cntct {
+    text-align:right;
+    display: block;
+    float: left;
+    width: 66.666666%;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.col-md-right-cntct {
+    text-align:center;
+    display: block;
+    float: left;
+    width: 33.333333%;
+    margin-left:0px;
+    margin-right:0px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.faul {
+    margin-left:0px;
+    list-style-type: none;
+}
+
+.col-md-left-cntct h2 {
+font-size: 14px; 
+}
+
+@media only screen and (min-width: 768px) {
+ .col-md-left-cntct h2 {
+font-size: 18px; 
+ }
+}
+
+.col-md-left-cntct h3 {
+font-size: 12px; 
+}
+
+@media only screen and (min-width: 768px) {
+ .col-md-left-cntct h3 {
+font-size: 16px; 
+ }
+}
+
+.col-md-left-cntct h4 {
+font-size: 10px; 
+}
+
+@media only screen and (min-width: 768px) {
+ .col-md-left-cntct h4 {
+font-size: 14px; 
+ }
+}

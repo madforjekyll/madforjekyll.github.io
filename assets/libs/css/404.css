@@ -1,0 +1,6 @@
+body {
+    background-image: url('/assets/owner/hero/404.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}

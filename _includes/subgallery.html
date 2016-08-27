@@ -1,0 +1,28 @@
+{% if include.id %}
+  {% assign gallery = page.[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+<div class="gallery masonry-gallery">
+  {% for img in gallery %}
+
+  <figure class="gallery-item">
+
+	<header class='gallery-icon'>
+
+<a href="{{ site.url }}{{ site.baseurl }}{{ img.image_path }}" class="popup"  title="{{ img.image-caption }}" data-caption="{{ img.image-copyright }}">
+<img src="{{ site.url }}{{ site.baseurl }}{{ img.image_path }}"></a>
+						
+	</header>	
+		
+   <figcaption class='gallery-caption'>
+		<div class="entry-summary" id="{{ img.image-caption }}">
+				<h5 style="text-shadow: 2px 2px #000000;">{{img.image-caption}}</h5>
+					<h6 style="text-shadow: 2px 2px #000000;">{{img.image-copyright}}</h6>
+						</div>
+					</figcaption>
+				</figure>
+
+  {% endfor %}
+</div>

@@ -1,0 +1,70 @@
+---
+layout: page
+title: "Gallery"
+description: "all-time favorites"
+header-img: "assets/owner/hero/gallery-bg.jpg"
+permalink: /gallery/
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+
+<h3><a href="http://flexslider.woothemes.com/basic-slider-with-caption.html">FLEXSLIDER</a> is here!!!</h3> 
+  
+<!-- CSS -->
+	<link rel="stylesheet" href="../assets/libs/css/flexslider.css" type="text/css" media="screen" />
+
+</head>
+
+    <body>
+  <!-- slider -->
+    <section class="slider">
+	<div class="flexslider">
+   <ul class="slides">
+    <li>
+      <img src="{{root_url}}/assets/owner/slider/bg1.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
+    </li>
+    <li>
+      <img src="{{root_url}}/assets/owner/slider/bg2.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
+    </li>
+    <li>
+      <img src="{{root_url}}/assets/owner/slider/bg3.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
+    </li>
+      </ul>
+</div>
+      </section>
+
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="../assets/libs/js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: "false",
+        slideshowSpeed: "12000",
+        pausePlay: "true",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+<br>
+<h6>Image Source: <a href="https://unsplash.com/photos/YOT6kS8YtEA">UNSPLASH</a>
+
+
+
+</body></html>

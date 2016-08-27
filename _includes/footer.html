@@ -1,0 +1,60 @@
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <p class="copyright text-muted">{{ site.title }} &copy;  {{ site.time | date: '%Y' }}</p>
+<center><h6><p>Powered by <a href="https://github.com/">Github</a> - <a href="https://github.com/jekyll/">Jekyll</a> - <a href="https://github.com/madforjekyll/madforjekyll.github.io">MAD4Jekyll</a>.</p></h6></center>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->    
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!-- include image popups -->
+<script src="{{ site.url }}/assets/libs/js/jquery.magnific-popup.js"></script>
+
+<script type="text/javascript">
+      $(document).ready(function($) {
+        $('a.popup').magnificPopup({
+         type: 'image',
+	  gallery:{
+         enabled:true,
+         navigateByImgClick: true,
+         preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+       },
+image: {
+      titleSrc: function(item) {
+              return item.el.attr('title') + '&nbsp;' + item.el.attr('data-caption');
+            }
+        }
+          // other options
+      });
+});
+    </script>
+
+<script src="{{ site.url }}/assets/libs/js/retina.min.js"></script>
+<!-- include Masonry -->
+<script src="{{ site.url }}/assets/libs/js/isotope.pkgd.min.js"></script> 
+<!-- include mousewheel plugins -->
+<script src="{{ site.url }}/assets/libs/js/jquery.mousewheel.min.js"></script>
+<!-- include carousel plugins -->
+<script src="{{ site.url}}/assets/libs/js/jquery.tinycarousel.min.js"></script>
+<!-- include svg line drawing plugin -->
+<script src="{{ site.url }}/assets/libs/js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="{{ site.url }}/assets/libs/js/scripts.js"></script>
+<!-- Modernizr -->
+ <script src="{{ site.url }}/assets/libs/js/modernizr.js"></script>
+
+<!-- Footnotes -->
+<script src="{{ site.url }}/assets/libs/js/bigfoot.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $.bigfoot();
+</script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{{ site.url }}/assets/libs/js/main.min.js"></script>

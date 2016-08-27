@@ -1,0 +1,104 @@
+---
+layout: page
+title: "MADness"
+description: "MAD for Jekyll!!!"
+header-img: "assets/owner/hero/home-bg.jpg"
+permalink: ./index.html
+---
+
+<html class="no-js" lang="en">
+<head>
+	<meta content="charset=utf-8">
+
+<!-- CSS -->
+	<link rel="stylesheet" href="{{root_url}}/assets/libs/css/intro.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="{{root_url}}/assets/libs/css/flexslider.css" type="text/css" media="screen" />
+
+<!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+  <!-- FlexSlider -->
+  <script defer src="{{root_url}}/assets/libs/js/jquery.flexslider.js"></script>
+
+<!-- Modernizr -->
+  <script src="{{ site.baseurl }}/assets/libs/js/modernizr.js"></script>
+
+  <!-- Back To Top -->
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        slideshow: false,
+        slideshowSpeed: 12000,
+        pausePlay: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+</head>
+
+<body>
+
+ <!-- intro -->
+<div class="intro">
+  <div class="row">
+
+        <div class="col-md-left-cntct">
+
+<h2>Welcome to MADness!</h2>
+     
+<h3>'MAD4Jekyll' is a theme for <a href="https://github.com/jekyll/">Jekyll</a>.</h3>
+<br>
+<h4>It is based on <a href="http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/">Clean Blog</a> theme by <a href="http://startbootstrap.com/">Start Bootstrap</a>.
+<br><br><br>
+<b>Features</b>: 
+<br><br>-- Integrated slider with captions from <a href="http://flexslider.woothemes.com/basic-slider-with-caption.html">Flexslider</a>.
+<br><br>-- Back To Top arrow.
+<br><br>-- A separate section for <a href="{{ root_url }}/writing/">'blogging'</a>.
+<br><br>-- A separate section for <a href="{{ root_url }}/gallery/">'galleries'</a>, beside the featured one at the homepage.</h4>
+        </div>  
+
+
+        <div class="col-md-right-cntct">
+    {% include links.html %}
+         </div>  
+ 
+ </div>
+</div>
+
+
+<!-- slider -->
+
+	<div class="flexslider" style="display:none;">
+  <ul class="slides">
+    <li>
+      <img src="{{root_url}}/assets/owner/slider/bg1.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
+    </li>
+    <li>
+      <img src="{{root_url}}/assets/owner/slider/bg2.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
+    </li>
+    <li>
+      <img src="{{root_url}}/assets/owner/slider/bg3.jpg" />
+<p class="flex-caption">Source: <a href="https://unsplash.com/">Unsplash</a></p>
+    </li>
+      </ul>
+</div>
+
+
+ 
+<br>
+<h6><p>Image Source: <a href="http://www.wallconvert.com/wallpapers/fantasy/on-cliffs-edge-18900.html">Wallconvert</a></p></h6>
+
+
+
+
+       </body>
+    </html>
