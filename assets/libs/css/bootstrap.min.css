@@ -5480,10 +5480,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
   padding-right: 15px;
   padding-left: 15px;
   overflow-x: visible;
-  -webkit-overflow-scrolling: touch;
-  border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1)
 }
 
 .navbar-collapse.in {
@@ -5635,7 +5631,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
 }
 
 .navbar-nav {
-  margin: 7.5px -15px;
+  margin: 3px;
     overflow-x: hidden;
     float: right;
     color: white;
