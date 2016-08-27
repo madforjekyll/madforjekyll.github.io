@@ -8,8 +8,12 @@
 ### 'MAD4Jekyll' is a theme for [Jekyll](https://github.com/jekyll/)
 
 > The template has been revised as of August 27th, 2016.
-> A big thank you to @patmuk for his contribution on regenerating the code.
- 
+
+----------
+
+> A big thank you to <a href="https://github.com/patmuk">Patrick Mukherjee</a> for his contribution on regenerating the code.
+
+
 ### It is based on [Clean Blog](http://ironsummitmedia.github.io/startbootstrap-clean-blog-jekyll/) theme by [Start Bootstrap](http://startbootstrap.com/).
 
      
